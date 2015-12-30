@@ -13,6 +13,11 @@
 		DF714E341C34780B00B5ABBE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DF714E331C34780B00B5ABBE /* Assets.xcassets */; };
 		DF714E371C34780B00B5ABBE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DF714E351C34780B00B5ABBE /* LaunchScreen.storyboard */; };
 		DF714E421C34780B00B5ABBE /* InstantiateFromStoryboardUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF714E411C34780B00B5ABBE /* InstantiateFromStoryboardUITests.swift */; };
+		DF714E501C3478DA00B5ABBE /* StoryboardInstantiable.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF714E4F1C3478DA00B5ABBE /* StoryboardInstantiable.swift */; };
+		DF714E521C34791700B5ABBE /* UIViewController+StoryboardInstantiable.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF714E511C34791700B5ABBE /* UIViewController+StoryboardInstantiable.swift */; };
+		DF714E541C34793B00B5ABBE /* UIStoryboardExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF714E531C34793B00B5ABBE /* UIStoryboardExtension.swift */; };
+		DF714E561C347CFF00B5ABBE /* TimeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF714E551C347CFF00B5ABBE /* TimeViewController.swift */; };
+		DF714E581C34836400B5ABBE /* SettingsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF714E571C34836400B5ABBE /* SettingsTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +41,11 @@
 		DF714E3D1C34780B00B5ABBE /* InstantiateFromStoryboardUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = InstantiateFromStoryboardUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DF714E411C34780B00B5ABBE /* InstantiateFromStoryboardUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstantiateFromStoryboardUITests.swift; sourceTree = "<group>"; };
 		DF714E431C34780B00B5ABBE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DF714E4F1C3478DA00B5ABBE /* StoryboardInstantiable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = StoryboardInstantiable.swift; path = ../../StoryboardInstantiable.swift; sourceTree = "<group>"; };
+		DF714E511C34791700B5ABBE /* UIViewController+StoryboardInstantiable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+StoryboardInstantiable.swift"; sourceTree = "<group>"; };
+		DF714E531C34793B00B5ABBE /* UIStoryboardExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIStoryboardExtension.swift; sourceTree = "<group>"; };
+		DF714E551C347CFF00B5ABBE /* TimeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimeViewController.swift; sourceTree = "<group>"; };
+		DF714E571C34836400B5ABBE /* SettingsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,8 +87,10 @@
 		DF714E2B1C34780A00B5ABBE /* InstantiateFromStoryboard */ = {
 			isa = PBXGroup;
 			children = (
+				DF714E4D1C3478A200B5ABBE /* Protocols */,
+				DF714E4E1C3478B300B5ABBE /* Extensions */,
+				DF714E4C1C34788E00B5ABBE /* ViewControllers */,
 				DF714E2C1C34780B00B5ABBE /* AppDelegate.swift */,
-				DF714E2E1C34780B00B5ABBE /* ViewController.swift */,
 				DF714E301C34780B00B5ABBE /* Main.storyboard */,
 				DF714E331C34780B00B5ABBE /* Assets.xcassets */,
 				DF714E351C34780B00B5ABBE /* LaunchScreen.storyboard */,
@@ -94,6 +106,33 @@
 				DF714E431C34780B00B5ABBE /* Info.plist */,
 			);
 			path = InstantiateFromStoryboardUITests;
+			sourceTree = "<group>";
+		};
+		DF714E4C1C34788E00B5ABBE /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				DF714E2E1C34780B00B5ABBE /* ViewController.swift */,
+				DF714E551C347CFF00B5ABBE /* TimeViewController.swift */,
+				DF714E571C34836400B5ABBE /* SettingsTableViewController.swift */,
+			);
+			name = ViewControllers;
+			sourceTree = "<group>";
+		};
+		DF714E4D1C3478A200B5ABBE /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				DF714E4F1C3478DA00B5ABBE /* StoryboardInstantiable.swift */,
+			);
+			name = Protocols;
+			sourceTree = "<group>";
+		};
+		DF714E4E1C3478B300B5ABBE /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				DF714E511C34791700B5ABBE /* UIViewController+StoryboardInstantiable.swift */,
+				DF714E531C34793B00B5ABBE /* UIStoryboardExtension.swift */,
+			);
+			name = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -198,7 +237,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				DF714E2F1C34780B00B5ABBE /* ViewController.swift in Sources */,
+				DF714E561C347CFF00B5ABBE /* TimeViewController.swift in Sources */,
+				DF714E581C34836400B5ABBE /* SettingsTableViewController.swift in Sources */,
+				DF714E501C3478DA00B5ABBE /* StoryboardInstantiable.swift in Sources */,
+				DF714E541C34793B00B5ABBE /* UIStoryboardExtension.swift in Sources */,
 				DF714E2D1C34780B00B5ABBE /* AppDelegate.swift in Sources */,
+				DF714E521C34791700B5ABBE /* UIViewController+StoryboardInstantiable.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -388,6 +432,7 @@
 				DF714E481C34780B00B5ABBE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		DF714E491C34780B00B5ABBE /* Build configuration list for PBXNativeTarget "InstantiateFromStoryboardUITests" */ = {
 			isa = XCConfigurationList;
@@ -396,6 +441,7 @@
 				DF714E4B1C34780B00B5ABBE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

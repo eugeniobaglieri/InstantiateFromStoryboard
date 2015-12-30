@@ -10,16 +10,14 @@ import UIKit
 
 class ViewController: UIViewController {
 
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+    @IBAction func timeControllerButtonPressed(sender: UIButton) {
+        let tc = TimeViewController.instantiateFromStoryboard(UIStoryboard.mainStoryboard())
+        navigationController?.pushViewController(tc, animated: true)
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    @IBAction func settingControllerButtonPressed(sender: AnyObject) {
+        let sc = SettingsTableViewController.instantiateFromStoryboard(UIStoryboard.mainStoryboard())
+        navigationController?.pushViewController(sc, animated: true)
     }
-
-
 }
 
