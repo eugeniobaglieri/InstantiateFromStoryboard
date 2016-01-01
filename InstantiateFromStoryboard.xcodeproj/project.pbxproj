@@ -13,11 +13,11 @@
 		DF714E341C34780B00B5ABBE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DF714E331C34780B00B5ABBE /* Assets.xcassets */; };
 		DF714E371C34780B00B5ABBE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DF714E351C34780B00B5ABBE /* LaunchScreen.storyboard */; };
 		DF714E421C34780B00B5ABBE /* InstantiateFromStoryboardUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF714E411C34780B00B5ABBE /* InstantiateFromStoryboardUITests.swift */; };
-		DF714E501C3478DA00B5ABBE /* StoryboardInstantiable.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF714E4F1C3478DA00B5ABBE /* StoryboardInstantiable.swift */; };
 		DF714E521C34791700B5ABBE /* UIViewController+StoryboardInstantiable.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF714E511C34791700B5ABBE /* UIViewController+StoryboardInstantiable.swift */; };
 		DF714E541C34793B00B5ABBE /* UIStoryboardExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF714E531C34793B00B5ABBE /* UIStoryboardExtension.swift */; };
 		DF714E561C347CFF00B5ABBE /* TimeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF714E551C347CFF00B5ABBE /* TimeViewController.swift */; };
 		DF714E581C34836400B5ABBE /* SettingsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF714E571C34836400B5ABBE /* SettingsTableViewController.swift */; };
+		DFA5D3FD1C36C2EF0066C946 /* StoryboardInstantiable.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFA5D3FC1C36C2EF0066C946 /* StoryboardInstantiable.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -41,11 +41,11 @@
 		DF714E3D1C34780B00B5ABBE /* InstantiateFromStoryboardUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = InstantiateFromStoryboardUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DF714E411C34780B00B5ABBE /* InstantiateFromStoryboardUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstantiateFromStoryboardUITests.swift; sourceTree = "<group>"; };
 		DF714E431C34780B00B5ABBE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		DF714E4F1C3478DA00B5ABBE /* StoryboardInstantiable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = StoryboardInstantiable.swift; path = ../../StoryboardInstantiable.swift; sourceTree = "<group>"; };
 		DF714E511C34791700B5ABBE /* UIViewController+StoryboardInstantiable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+StoryboardInstantiable.swift"; sourceTree = "<group>"; };
 		DF714E531C34793B00B5ABBE /* UIStoryboardExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIStoryboardExtension.swift; sourceTree = "<group>"; };
 		DF714E551C347CFF00B5ABBE /* TimeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimeViewController.swift; sourceTree = "<group>"; };
 		DF714E571C34836400B5ABBE /* SettingsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsTableViewController.swift; sourceTree = "<group>"; };
+		DFA5D3FC1C36C2EF0066C946 /* StoryboardInstantiable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StoryboardInstantiable.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -121,7 +121,7 @@
 		DF714E4D1C3478A200B5ABBE /* Protocols */ = {
 			isa = PBXGroup;
 			children = (
-				DF714E4F1C3478DA00B5ABBE /* StoryboardInstantiable.swift */,
+				DFA5D3FC1C36C2EF0066C946 /* StoryboardInstantiable.swift */,
 			);
 			name = Protocols;
 			sourceTree = "<group>";
@@ -238,8 +238,8 @@
 			files = (
 				DF714E2F1C34780B00B5ABBE /* ViewController.swift in Sources */,
 				DF714E561C347CFF00B5ABBE /* TimeViewController.swift in Sources */,
+				DFA5D3FD1C36C2EF0066C946 /* StoryboardInstantiable.swift in Sources */,
 				DF714E581C34836400B5ABBE /* SettingsTableViewController.swift in Sources */,
-				DF714E501C3478DA00B5ABBE /* StoryboardInstantiable.swift in Sources */,
 				DF714E541C34793B00B5ABBE /* UIStoryboardExtension.swift in Sources */,
 				DF714E2D1C34780B00B5ABBE /* AppDelegate.swift in Sources */,
 				DF714E521C34791700B5ABBE /* UIViewController+StoryboardInstantiable.swift in Sources */,
